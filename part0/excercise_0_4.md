@@ -5,7 +5,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    Note left of browser: Payload: the note as entered by the user
+    Note left of server: Payload: the note as entered by the user
     server->>browser: Status 302 (redirect to exampleapp/notes)
     deactivate server
 
